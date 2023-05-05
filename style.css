@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-1 : rgba(0, 0, 0, 0.747);
+    --cor-2 : white;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8cccff;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+}
+
+.box .inputBox {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+}
+
+.inputBox #toggleBtn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    background-color:rgb(207, 207, 207);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("img-visibility.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 4px 4px;
+    transition: all .5s;
+
+}
+
+li {
+    margin: 10px 0;
+    transition: all .5s;
+    opacity: .6;
+}
+
+.valid {
+    opacity: 1;
+}
+
+.toggleBtnOff {
+    background-image: url("img-visibility-off.png") !important;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 4px 4px;
+    transition: all .5s;
+}
+
+.validation {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.validation ul {
+    list-style: none;
+    position: relative;
+}
+
+.validation ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    background-image: url("circle.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 4px 6px;
+    margin-right: 5px;
+}
+
+.valid {
+    opacity: 1;
+}
+
+.valid::before {
+    background-image: url("valid.png") !important;
+   
+}
